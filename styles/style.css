@@ -49,8 +49,8 @@ ol {
 }
 
 .result {
-  /*display: flex;
-  flex-direction: column;*/
+  display: flex;
+  flex-direction: column;
 }
 
 .result__video-container {
@@ -113,7 +113,8 @@ ol {
   white-space: nowrap;
 }
 
-.search-form__textfield {/*input*/
+.search-form__textfield {
+  /*input*/
   width: 225px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -143,7 +144,8 @@ ol {
   gap: 15px;
 }
 
-.search-form__pseudo-checkbox { /*пустой span*/
+.search-form__pseudo-checkbox {
+  /*пустой span*/
   height: 19px;
   width: 19px;
   padding: 1px;
