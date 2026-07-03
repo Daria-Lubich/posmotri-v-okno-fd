@@ -25,7 +25,6 @@ html {
   display: flex;
   align-items: end;
   width: 1140px;
-  height: 534px;
   gap: 30px;
 }
 
@@ -67,10 +66,15 @@ ol {
   object-fit: cover;
 }
 
+video {
+  object-position: center;
+}
+
 .search-form {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-bottom: 1px;
 }
 
 .search-form__fieldset {
@@ -118,12 +122,17 @@ ol {
   width: 225px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
+  line-height: 100%;
   color: #fff;
   background-color: inherit;
   border: none; /* сначала убираем все границы */
   border-top: 1px solid; /* цвет подставь из макета */
   border-bottom: 1px solid;
   appearance: none;
+}
+
+.search-form__fieldset:nth-child(2) {
+  padding-left: 7px;
 }
 
 .search-form__textfield:focus {
@@ -189,7 +198,7 @@ ol {
 }
 
 .button:active {
-  background-color: #545050;
+  background-color:#545050;
 }
 
 .button:focus-visible {
@@ -213,7 +222,7 @@ ol {
   justify-content: end;
   width: 100%;
   height: 100%;
-  gap: 26px;
+  gap: 22px;
 }
 
 .title {
@@ -245,7 +254,7 @@ ol {
 }
 
 .content__list-item {
-  padding-left: 3px;
+  padding-left: 2px;
   padding-right: 3px;
 }
 
@@ -298,9 +307,10 @@ ol {
 
 .content__video-card-description {
   display: -webkit-box;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-top: 3px;
 }
 
 .content__video-card-thumbnail {
